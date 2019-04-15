@@ -34,7 +34,6 @@ function screenChange(screen) {
       document.body.scrollTop > 80 ||
       document.documentElement.scrollTop > 80
     ) {
-      console.log(1);
       navBar.style.cssText =
         'height: 60px;background-color: rgba(0, 0, 0, 0.6);';
       logo.style.cssText = 'width:40px; height: 40px;';
@@ -42,7 +41,6 @@ function screenChange(screen) {
       navUl.style.cssText = 'margin-top: 15px';
       navContainer.style.cssText = 'grid-auto-rows: 60px 0px';
     } else {
-      console.log(2);
       navBar.style.cssText =
         'height: 100px;background-color: rgba(0, 0, 0, 0);';
       logo.style.cssText = 'width:80px; height: 80px;';

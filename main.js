@@ -2,8 +2,6 @@
 
 let navBar = document.querySelector('#navBar');
 let logo = document.querySelector('.logo');
-let logoLink = document.querySelector('.logoLink');
-let navUl = document.querySelector('#navUl');
 let navContainer = document.querySelector('#navBar .container');
 let navLi = document.querySelectorAll('.navLi');
 let navA = document.querySelectorAll('.navLi a');
@@ -21,8 +19,6 @@ function screenChange(screen) {
     });
     navBar.style.cssText = 'height: 50px;background-color: rgba(0, 0, 0, 0.6);';
     logo.style.cssText = 'width:30px; height: 30px;';
-    logoLink.style.cssText = 'margin-top: 10px';
-    navUl.style.cssText = 'margin-top: 0px';
     navContainer.style.cssText = 'grid-auto-rows: 50px 0px';
   } else {
     burger.style.display = 'none';
@@ -37,15 +33,11 @@ function screenChange(screen) {
       navBar.style.cssText =
         'height: 60px;background-color: rgba(0, 0, 0, 0.6);';
       logo.style.cssText = 'width:40px; height: 40px;';
-      logoLink.style.cssText = 'margin-top: 8.5px';
-      navUl.style.cssText = 'margin-top: 15px';
       navContainer.style.cssText = 'grid-auto-rows: 60px 0px';
     } else {
       navBar.style.cssText =
         'height: 100px;background-color: rgba(0, 0, 0, 0);';
       logo.style.cssText = 'width:80px; height: 80px;';
-      logoLink.style.cssText = 'margin-top: 30px';
-      navUl.style.cssText = 'margin-top: 55px';
       navContainer.style.cssText = 'grid-auto-rows: 100px 0px';
     }
     window.onscroll = function(x) {
@@ -93,14 +85,10 @@ function scrollFunction() {
   ) {
     navBar.style.cssText = 'height: 60px;background-color: rgba(0, 0, 0, 0.6);';
     logo.style.cssText = 'width:40px; height: 40px;';
-    logoLink.style.cssText = 'margin-top: 8.5px';
-    navUl.style.cssText = 'margin-top: 15px';
     navContainer.style.cssText = 'grid-auto-rows: 60px 0px';
   } else if (window.matchMedia('(min-width: 768px)').matches) {
     navBar.style.cssText = 'height: 100px;background-color: rgba(0, 0, 0, 0);';
     logo.style.cssText = 'width:80px; height: 80px;';
-    logoLink.style.cssText = 'margin-top: 30px';
-    navUl.style.cssText = 'margin-top: 55px';
     navContainer.style.cssText = 'grid-auto-rows: 100px 0px';
   }
 }
